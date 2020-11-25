@@ -4,7 +4,7 @@ This project runs a price optimisation on a cohort of 38 consumer credit loans d
 Pricing (apr) for loans is between 0.145 and 0.355. 
 
 # Data 
-wrte-off.csv -> write off profiles as a percentage of balance each month 
+wrte-off.csv -> write off profiles as a percentage of balance each month according to risk score tier
 loans_test3.csv -> loan cohort data 
 Note: All data is fictional and just for the purposes of testing the optimisation strategy
 
