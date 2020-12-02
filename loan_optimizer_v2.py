@@ -2,6 +2,39 @@ import pandas as pd
 import numpy as np
 
 class LoanInstance():
+       """
+    A class used to represent a cohort of consumer loans 
+    
+    ...
+    
+    Attributes
+    ----------
+    total_interest : float 
+        The total interest across the entire loan cohort
+        
+    write_off_curves: pandas.core.frame.DataFrame
+        The write off curves for the loan cohort. These are imported using the read_cohort method and should be as a percentage of the start balance each month in the balance profile.
+        
+    cohort: pandas.core.frame.DataFrame
+        The loan cohort.
+        
+    price_args: numpy.ndarray
+        a 1D array representing the initial price point for the loans cohort
+        
+    Methods
+    -------
+    read_cohort(location_cohort, location_wo)
+        takes two arguments: location_cohort is the location of the loans cohort 
+                             location_wo is the location of the write off curves
+                            
+        Warning! Both files must be csv.
+    
+    repayment_profile(arg)
+        takes one argument, should be price_arg attribute for LoanInstance class.
+        Generates balance profiles across all loans in the loan cohort then calculates total interest across cohort.
+    
+    
+    """
     def __init__(self,
                  amount=0,
                  term=0,
