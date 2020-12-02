@@ -1,6 +1,6 @@
 --- Project Overview ---
 # Overview
-This project runs a price optimisation on a cohort of 38 consumer credit loans defined by the loan amount, credit score, apr and term.  The optimisation aims to maximise the interest income generated across the lending cohort by varying the pricing (apr). 
+This project runs a price optimisation on a cohort of 38 standard interest bearing consumer credit loans. They are defined by the loan amount, credit score category, apr and term.  The optimisation aims to maximise the interest income generated across the lending cohort by varying the pricing (apr). 
 Pricing (apr) for loans is between 0.145 and 0.355. 
 
 # Data 
